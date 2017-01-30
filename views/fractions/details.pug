@@ -1,0 +1,10 @@
+extends ../_layout
+
+block content
+
+    h1
+        if model
+            a(href="/fractions/" + model.id)
+                = model.name
+        else
+            | Not found :(
